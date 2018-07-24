@@ -1,0 +1,15 @@
+let nome = document.querySelector('#idname');
+let entradas = document.querySelectorAll('input');
+let sobrenome = document.querySelector('#idsobrenome');
+let email = document.querySelector('#idemail');
+let botao = document.querySelector("#botao");
+let paragrafo = document.querySelectorAll('p');
+
+botao.addEventListener('click', enviar); 
+
+
+function enviar(){
+    if(confirm ("deseja confirmar?")){
+        alert('Obrigado(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }   
+}
